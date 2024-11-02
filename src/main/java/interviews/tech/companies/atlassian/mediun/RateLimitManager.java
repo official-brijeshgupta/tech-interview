@@ -1,4 +1,4 @@
-package interviews.tech.atlassian.mediun;
+package interviews.tech.companies.atlassian.mediun;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;

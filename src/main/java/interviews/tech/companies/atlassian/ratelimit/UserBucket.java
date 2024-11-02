@@ -1,4 +1,4 @@
-package interviews.tech.atlassian.ratelimit;
+package interviews.tech.companies.atlassian.ratelimit;
 
 public class UserBucket extends GenericBucket<Long> {
 

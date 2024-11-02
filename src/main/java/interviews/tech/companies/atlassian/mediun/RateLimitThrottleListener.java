@@ -1,4 +1,4 @@
-package interviews.tech.atlassian.mediun;
+package interviews.tech.companies.atlassian.mediun;
 
 /**
  * Listener interface’s implementation to receive the threshold

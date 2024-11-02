@@ -1,4 +1,4 @@
-package interviews.tech.atlassian.ratelimit;
+package interviews.tech.companies.atlassian.ratelimit;
 
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;

@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-deployment
+  labels:
+    app: mongodb
+ spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+      - name: mongodb
+        image: mongo
+        ports:
+        - containerPort: 27017 # this is port which mongodb docker exposes as mentioned in documentation on docker hub
+        env:
+        - name: MONGO_INITDB_ROOT_USERNAME # this is username env variable as mentioned in documentation on docker hub
+          valueFrom:
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongodb-username
+        - name: MONGO_INITDB_ROOT_PASSWORD # this is password env variable as mentioned in documentation on docker hub
+          valueFrom:
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongodb-password
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+spec:
+  selector:
+    app: mongodb # selector to find the Pod based on the label
+  ports:
+    - protocol: TCP
+      port: 27017  #service port. This can be different from target port.
+      targetPort: 27017   # container port. This should match with the port mentioned in the Pod

@@ -1,4 +1,4 @@
-package interviews.tech.atlassian;
+package interviews.tech.companies.atlassian;
 
 import org.springframework.data.util.Pair;
 

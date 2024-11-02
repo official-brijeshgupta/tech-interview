@@ -1,4 +1,4 @@
-package interviews.tech.atlassian.mediun;
+package interviews.tech.companies.atlassian.mediun;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantReadWriteLock;

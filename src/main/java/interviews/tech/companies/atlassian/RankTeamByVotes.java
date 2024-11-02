@@ -1,4 +1,4 @@
-package interviews.tech.atlassian;
+package interviews.tech.companies.atlassian;
 
 import java.util.ArrayList;
 import java.util.Arrays;

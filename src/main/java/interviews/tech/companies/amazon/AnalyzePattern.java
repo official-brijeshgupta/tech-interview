@@ -1,4 +1,4 @@
-package interviews.tech.amazon;
+package interviews.tech.companies.amazon;
 
 import java.util.*;
 

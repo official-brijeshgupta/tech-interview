@@ -1,4 +1,4 @@
-package interviews.tech.atlassian.connectionpool;
+package interviews.tech.companies.atlassian.connectionpool;
 
 
 import java.sql.*;
