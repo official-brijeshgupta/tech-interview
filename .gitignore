@@ -103,3 +103,4 @@ Desktop.ini
 *.tmp
 *.swp
 *.swo
+/.gradle/
